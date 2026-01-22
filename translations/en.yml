@@ -1,0 +1,38 @@
+tabs:
+    seo: SEO
+
+sections:
+    meta:
+        headline: SEO Settings
+    ogMeta:
+        headline: Open Graph Settings
+        help: Set how your website appears when shared on social networks like Facebook or LinkedIn.
+    preview:
+        label: Preview
+        labelSettings: Preview (Homepage)
+    links:
+        label: Links
+
+fields:
+    metaTitle:
+        label: Title
+    metaDescription:
+        label: Description
+    ogSiteName:
+        label: Open Graph Site Name
+    ogTitle:
+        label: Open Graph Title
+    ogDescription:
+        label: Open Graph Description
+    ogImage:
+        label: Open Graph Image
+        empty: No Open Graph Image selected
+
+sitemap:
+    title: Sitemap
+    description: This is the sitemap for your website that informs search engines about the pages on your website that can be indexed.
+    url: URL
+    priority: Priority
+    changefreq: Change Frequency
+    last-updated: Last Updated
+    no-entries: No entries found

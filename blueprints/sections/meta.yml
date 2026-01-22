@@ -1,0 +1,17 @@
+type: fields
+fields:
+    _metaHeadline:
+        label: seo.sections.meta.headline
+        type: headline
+    metaTitle:
+        label: seo.fields.metaTitle.label
+        type: text
+        icon: title
+        placeholder: '{{ page.metadata.placeholder("metaTitle") }}'
+    metaDescription:
+        label: seo.fields.metaDescription.label
+        type: writer
+        inline: true
+        nodes: false
+        marks: false
+        placeholder: '{{ page.metadata.placeholder("metaDescription") }}'

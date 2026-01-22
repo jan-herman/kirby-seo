@@ -1,0 +1,38 @@
+tabs:
+    seo: SEO
+
+sections:
+    meta:
+        headline: Nastavení SEO
+    ogMeta:
+        headline: Nastavení Open Graph
+        help: Nastavte, jak se stránka zobrazuje při sdílení na sociálních sítích, jako je Facebook nebo LinkedIn.
+    preview:
+        label: Náhled
+        labelSettings: Náhled (Homepage)
+    links:
+        label: Odkazy
+
+fields:
+    metaTitle:
+        label: Titulek
+    metaDescription:
+        label: Popisek (description)
+    ogSiteName:
+        label: Open Graph název webu (site name)
+    ogTitle:
+        label: Open Graph titulek
+    ogDescription:
+        label: Open Graph popisek (description)
+    ogImage:
+        label: Open Graph obrázek
+        empty: Obrázek je prázdný
+
+sitemap:
+    title: Mapa webu
+    description: Toto je mapa webu, která slouží k tomu, aby vyhledávače věděly, které stránky mohou být indexovány.
+    url: URL
+    priority: Priorita
+    changefreq: Frekvence změn
+    last-updated: Poslední aktualizace
+    no-entries: Nebyly nalezeny žádné záznamy

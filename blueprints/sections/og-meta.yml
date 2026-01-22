@@ -1,0 +1,23 @@
+type: fields
+fields:
+    _ogMetaHeadline:
+        label: seo.sections.ogMeta.headline
+        help: seo.sections.ogMeta.help
+        type: headline
+    ogSiteName: false
+    ogTitle:
+        label: seo.fields.ogTitle.label
+        type: text
+        icon: title
+        placeholder: '{{ page.metadata.placeholder("ogTitle") }}'
+    ogDescription:
+        label: seo.fields.ogDescription.label
+        type: writer
+        inline: true
+        nodes: false
+        marks: false
+        placeholder: '{{ page.metadata.placeholder("ogDescription") }}'
+    ogImage:
+        extends: seo/fields/og-image
+        label: seo.fields.ogImage.label
+        empty: seo.fields.ogImage.empty

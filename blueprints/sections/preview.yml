@@ -1,0 +1,9 @@
+label: seo.sections.preview.label
+type: serp-preview
+faviconUrl: 'https://www.google.com/s2/favicons?domain={{ kirby.environment.host }}&sz=32'
+siteTitle: '{{ site.title }}'
+siteUrl: '{{ kirby.url }}'
+titleContentKey: metaTitle
+defaultTitle: '{{ model.metadata.placeholder("metaTitle") }}'
+descriptionContentKey: metaDescription
+defaultDescription: '{{ model.metadata.placeholder("metaDescription") }}'

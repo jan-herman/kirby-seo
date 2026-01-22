@@ -1,0 +1,21 @@
+.jh-seo-debug-links {
+
+}
+
+.jh-seo-debug-links .k-icon {
+    display: inline-block;
+    vertical-align: -.25rem;
+    margin-right: .5rem;
+}
+
+.jh-seo-debug-links a {
+    display: block;
+    font-size: var(--text-sm);
+    line-height: 1.5rem;
+    color: var(--color-text-dimmed);
+    text-decoration: none;
+}
+
+.jh-seo-debug-links a:hover {
+    text-decoration: underline;
+}

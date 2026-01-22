@@ -1,0 +1,28 @@
+extends: seo/tabs/page
+
+columns:
+    main:
+        sections:
+            seoMeta:
+                extends: seo/sections/meta
+                fields:
+                    metaTitle: false
+            seoOgMeta:
+                extends: seo/sections/og-meta
+                fields:
+                    ogSiteName:
+                        label: seo.fields.ogSiteName.label
+                        type: text
+                        icon: globe
+                        placeholder: '{{ page.metadata.placeholder("ogSiteName") }}'
+                    ogTitle: false
+    sidebar:
+        sections:
+            seoPreview:
+                extends: seo/sections/preview
+                label: seo.sections.preview.labelSettings
+                siteTitle: '{{ site.title }}'
+                titleContentKey: false
+                defaultTitle: '{{ site.find("home").metadata.metaTitle }}'
+                descriptionContentKey: false
+                defaultDescription: '{{ site.find("home").metadata.metaDescription }}'

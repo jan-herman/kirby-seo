@@ -1,0 +1,20 @@
+label: seo.tabs.seo
+icon: search
+
+columns:
+    main:
+        width: 7/12
+        sections:
+            seoMeta: seo/sections/meta
+            _seoLine1:
+                type: fields
+                fields:
+                    _seoLine1:
+                        type: line
+            seoOgMeta: seo/sections/og-meta
+    sidebar:
+        width: 5/12
+        sticky: true
+        sections:
+            seoPreview: seo/sections/preview
+            seoLinks: seo/sections/links
