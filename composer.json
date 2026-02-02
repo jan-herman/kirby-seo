@@ -1,7 +1,7 @@
 {
     "name": "jan-herman/kirby-seo",
     "description": "SEO plugin for Kirby CMS",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "kirby-plugin",
     "license": "MIT",
     "homepage": "https://github.com/jan-herman/kirby-seo",

@@ -10,7 +10,6 @@ class MetaTags
     public const TAG_TYPE_MAP = [
 		[
 			'tag' => 'title',
-			'priority' => true,
 			'tags' => [
 				'title'
 			]
@@ -70,7 +69,19 @@ class MetaTags
                 continue;
             }
 
-            $tag = self::resolveTag($name);
+			$tag = self::resolveTag($name);
+
+			if (is_array($value)) {
+				foreach ($value as $attributes) {
+					$tags[] = [
+						'tag' => $tag['tag'],
+						'attributes' => $attributes,
+						'content' => null,
+					];
+				}
+				continue;
+			}
+
             $tags[] = [
 				'tag' => $tag['tag'],
 				'attributes' => isset($tag['attributes']) ? [
