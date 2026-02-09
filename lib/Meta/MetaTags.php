@@ -3,6 +3,7 @@
 namespace JanHerman\Seo\Meta;
 
 use Kirby\Cms\Html;
+use Kirby\Toolkit\A;
 use Kirby\Toolkit\Str;
 
 class MetaTags
@@ -72,13 +73,18 @@ class MetaTags
 			$tag = self::resolveTag($name);
 
 			if (is_array($value)) {
-				foreach ($value as $attributes) {
-					$tags[] = [
-						'tag' => $tag['tag'],
-						'attributes' => $attributes,
-						'content' => null,
-					];
+				if (!A::isAssociative($value)) {
+					foreach ($value as $val) {
+						$tags = array_merge($tags, self::metaToTags([$name => $val]));
+					}
+					continue;
 				}
+
+				$tags[] = [
+					'tag' => $tag['tag'],
+					'attributes' => $value,
+					'content' => null,
+				];
 				continue;
 			}
 
