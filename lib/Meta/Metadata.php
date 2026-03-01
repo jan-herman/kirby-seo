@@ -4,6 +4,7 @@ namespace JanHerman\Seo\Meta;
 
 use Kirby\Cms\Page;
 use Kirby\Cms\Language;
+use Kirby\Cms\File;
 use Kirby\Cms\FileVersion;
 use Kirby\Content\Field;
 use Kirby\Toolkit\Str;
@@ -175,7 +176,7 @@ class Metadata
         return $this->fromCascade($key, array_slice(self::CASCADE, 1));
     }
 
-    public function ogImageThumb(): FileVersion|null
+    public function ogImageThumb(): FileVersion|File|null
     {
         $file = $this->get('ogImage')?->toFile();
         $crop = option('jan-herman.seo.meta.ogImage.crop', true);
