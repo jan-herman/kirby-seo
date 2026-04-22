@@ -218,7 +218,7 @@ class Metadata
             return $option;
         }
 
-        return $this->page->isListed();
+        return $this->page->isIndexable();
     }
 
     private function languageAlternates(): array

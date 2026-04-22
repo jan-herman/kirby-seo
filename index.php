@@ -56,7 +56,7 @@ Kirby::plugin('jan-herman/seo', [
         ],
         'robots' => [
             'active' => true,
-            'index' => fn (Page $page) => $page->isListed(),
+            'index' => fn (Page $page) => $page->isIndexable(),
             'content' => [],
         ],
         'schema' => [
@@ -64,9 +64,10 @@ Kirby::plugin('jan-herman/seo', [
         ],
     ],
     'pageMethods' => [
-        'metadata' => fn () => new Metadata($this),
-        'schema'   => fn ($type) => Schema::getInstance($type, $this),
-	    'schemas'  => fn () => Schema::getInstances($this),
+        'metadata'    => fn () => new Metadata($this),
+        'schema'      => fn ($type) => Schema::getInstance($type, $this),
+	    'schemas'     => fn () => Schema::getInstances($this),
+        'isIndexable' => fn () => $this->isListed(),
     ],
     'siteMethods' => [
         'schema'  => fn ($type) => Schema::getInstance($type),
