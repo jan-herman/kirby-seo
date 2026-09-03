@@ -42,7 +42,7 @@ class Metadata
 		return $this->get($name);
 	}
 
-    private function settingsPage(): ?Page
+    public function settingsPage(): ?Page
     {
         if (isset($this->settings_page)) {
             return $this->settings_page;
